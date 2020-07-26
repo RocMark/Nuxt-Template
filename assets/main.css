@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* 預設的路由動畫 */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* 可幫頁面客製化路由動畫，page 元件中加上 transition: 'test' */
+.test-enter-active,
+.test-leave-active {
+  transition: opacity 0.5s;
+}
+
+.test-enter,
+.test-leave-active {
+  opacity: 0;
+}
