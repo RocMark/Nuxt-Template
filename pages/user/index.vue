@@ -1,8 +1,7 @@
 <template>
   <div class="container">
     <Logo />
-    <h1>RootPage</h1>
-    <Example />
+    <h1>User</h1>
   </div>
 </template>
 
