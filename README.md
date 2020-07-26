@@ -21,3 +21,4 @@ npm run generate
 - [ ] 檔案架構決定後 => 撰寫 BluePrints
 - [ ] SCSS 設定
 - [ ] 路由寫個筆記
+- [ ] 整理一下 meta tag => 寫在 index.js (想辦法讓每頁都套用)

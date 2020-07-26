@@ -7,7 +7,20 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head () {
+    return {
+      title: 'CustomTitle',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'some description'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style>

@@ -17,12 +17,14 @@ html {
   margin: 0;
 }
 
+.tl {
+  border: 0.5px solid #f50057;
+}
+
 .container {
   margin: 0 auto;
-  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
