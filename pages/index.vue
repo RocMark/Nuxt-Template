@@ -1,7 +1,9 @@
 <template>
   <div class="container">
     <Logo />
-    <h1>RootPage</h1>
+    <h1 class="test">
+      RootPage
+    </h1>
     <Example />
   </div>
 </template>
@@ -23,5 +25,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+$test: #f50057;
+.test {
+  border: .5px solid $test;
+}
 </style>
