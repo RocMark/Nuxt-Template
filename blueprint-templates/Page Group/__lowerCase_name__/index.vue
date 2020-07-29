@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>{{pascalCase name}}Page</h1>
+  <div class="container">
+    <h1>{{pascalCase name}} RootPage</h1>
   </div>
 </template>
 
