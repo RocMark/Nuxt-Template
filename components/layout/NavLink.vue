@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .the-nav-link {
   margin: 5px;
 }
