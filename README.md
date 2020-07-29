@@ -16,6 +16,8 @@ npm run start
 npm run generate
 ```
 
+## ⚙️ Functions
+- [x] Global SCSS Variable
 ## TodoList
 - [ ] 處理 exampleModule 引入 interceptor 問題
 - [ ] 檔案架構決定後 => 撰寫 BluePrints
