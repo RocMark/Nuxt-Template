@@ -1,11 +1,18 @@
 # Nuxt Template
 
-## Build Setup
+## 💿 Install 
 ```bash
 # install
 npm i
 
-# serve with hot reload at localhost:3000
+# install & generate .env file (will overwrite)
+npm run init
+```
+
+
+## 🚀 Usage
+```bash
+# serve with hot reload at localhost:3001
 npm run dev
 
 # build for production and launch server
@@ -18,9 +25,11 @@ npm run generate
 
 ## ⚙️ Functions
 - [x] Global SCSS Variable
+- [x] ESLint
+- [x] Router Example
+- [x] Page Group BluePrint
+
+
 ## TodoList
 - [ ] 處理 exampleModule 引入 interceptor 問題
-- [ ] 檔案架構決定後 => 撰寫 BluePrints
-- [ ] SCSS 設定
-- [ ] 路由寫個筆記
 - [ ] 整理一下 meta tag => 寫在 index.js (想辦法讓每頁都套用)

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Example</h1>
-    {{ todoLength }}
+    <h1>Example Component</h1>
+    <span>{{ todoLength }}</span>
   </div>
 </template>
 

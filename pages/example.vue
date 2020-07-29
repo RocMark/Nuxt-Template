@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <Logo />
-    <span>For All ExamplePage</span>
+    <span>Show on All ExamplePage</span>
     <nuxt-child />
   </div>
 </template>
