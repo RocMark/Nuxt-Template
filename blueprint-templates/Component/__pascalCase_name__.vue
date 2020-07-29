@@ -6,9 +6,9 @@
 
 <script>
 export default {
-  name: 'PascalCaseName'
+  name: '{{pascalCase name}}'
 }
 </script>
 
-<style>
+<style lang="scss">
 </style>
