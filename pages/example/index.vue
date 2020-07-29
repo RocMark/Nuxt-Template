@@ -1,12 +1,12 @@
 <template>
   <div class="container">
-    <Logo />
-    <h1>User</h1>
+    <h1>Example RootPage</h1>
   </div>
 </template>
 
 <script>
-export default {}
+export default {
+}
 </script>
 
 <style>

@@ -29,15 +29,15 @@ export default {
   },
   // ! 於 Server 也會觸發一次 ? (待查)
   async created () {
-    console.log('\x1B[36m%s\x1B[0m', '=test=====created==')
+    // console.log('\x1B[36m%s\x1B[0m', '=test=====created==')
     const url = 'https://jsonplaceholder.typicode.com/todos'
 
     const res = await axios.get(url)
-    console.log('\x1B[36m%s\x1B[0m', '=test==RES=====', res.data)
+    // console.log('\x1B[36m%s\x1B[0m', '=test==RES=====', res.data.length)
     this.testTodos = res.data
   },
   mounted () {
-    console.log('\x1B[36m%s\x1B[0m', '=test=====mounted==')
+    // console.log('\x1B[36m%s\x1B[0m', '=test=====mounted==')
     // this.getTodoList()
   },
   methods: {

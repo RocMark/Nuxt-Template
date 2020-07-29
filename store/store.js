@@ -10,7 +10,7 @@ const store = new Vuex.Store({
     exampleModule
   },
   // 全域使用的才寫這裡
-  state: {},
+  state: () => {},
   actions: {},
   mutations: {},
   strict: process.env.NODE_ENV !== 'production'

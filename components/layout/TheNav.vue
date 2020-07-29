@@ -13,8 +13,9 @@ export default {
   data () {
     return {
       routeList: [
-        { id: uuidv4(), to: '/user', name: 'User' },
-        { id: uuidv4(), to: '/user/5', name: 'UserID' },
+        { id: uuidv4(), to: '/example', name: 'Example' },
+        { id: uuidv4(), to: '/example/2', name: 'ExampleID-2' },
+        { id: uuidv4(), to: '/example/2/edit', name: 'ExampleID-2-Edit' },
         { id: uuidv4(), to: '/not-exist', name: '404' }
       ]
     }
