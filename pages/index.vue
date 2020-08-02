@@ -17,12 +17,12 @@ export default {
   },
   head () {
     return {
-      title: 'CustomTitle',
+      title: 'HomePage',
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'some description'
+          hid: 'home',
+          name: 'home',
+          content: 'this is home page'
         }
       ]
     }
