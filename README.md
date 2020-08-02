@@ -15,11 +15,11 @@ npm run init
 # serve with hot reload at localhost:3001
 npm run dev
 
-# build for production and launch server
+# build for production and launch server ( For SSR )
 npm run build
 npm run start
 
-# generate static project
+# generate static project ( Use on GithubPage )
 npm run generate
 ```
 
@@ -28,6 +28,7 @@ npm run generate
 - [x] ESLint
 - [x] Router Example
 - [x] Page Group BluePrint
+- [x] nuxt-start ( For Deploy )
 
 
 ## TodoList
