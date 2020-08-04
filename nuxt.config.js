@@ -34,7 +34,8 @@ export default {
   css: ['~/assets/main.css'], // use pure css file
   */
   css: [
-    '~/assets/scss/_base.scss'
+    // '~/assets/scss/_base.scss'
+    './assets/scss/main.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -57,7 +58,8 @@ export default {
   ],
   styleResources: {
     scss: [
-      './assets/scss/*.scss'
+      './assets/scss/main.scss'
+      // './assets/scss/*.scss'
     ]
   },
   /*
