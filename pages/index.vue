@@ -1,8 +1,11 @@
 <template>
   <div class="container">
     <Logo />
-    <h1>RootPage {{ testStr }} </h1>
+    <h1>
+      RootPage {{ testStr }}
+    </h1>
     <Example />
+    <!-- <img src="../assets/img/demo.svg" alt="demo"> -->
   </div>
 </template>
 
