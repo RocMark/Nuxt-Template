@@ -31,6 +31,16 @@ export default {
     ]
   },
   /*
+  ** Router
+  ** See https://nuxtjs.org/api/configuration-router
+  */
+  router: {
+    prefetchLinks: true,
+    linkActiveClass: 'nuxt-link-active',
+    linkExactActiveClass: 'nuxt-link-exact-active',
+    middleware: 'router-guard'
+  },
+  /*
   ** Global CSS
   css: ['~/assets/main.css'], // use pure css file
   */
