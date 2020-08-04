@@ -1,3 +1,4 @@
+import axios from 'axios'
 
 export default {
   /*
@@ -67,13 +68,38 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/sitemap' // 必須放在最下面
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {},
+  axios: {
+    baseURL: process.env.VUE_APP_API_BASE_URL || ''
+  },
+  /*
+  ** sitemap module configuration
+  ** See https://www.npmjs.com/package/@nuxtjs/sitemap
+  */
+  sitemap: {
+    hostname: 'https://rocmark.online',
+    gzip: true,
+    exclude: [
+      '/admin',
+      '/admin/**', // 只包含子路徑
+      '/account',
+      '/account/**'
+    ]
+    // 只有靜態網站、分頁少的才會用陣列自行撰寫
+    // routes: [{ url: '/page/3', changefreq: 'daily', priority: 1, lastmod: '2017-06-30T13:30:00.000Z' }]
+    // routes: async () => {
+    //   const baseURL = process.env.VUE_APP_API_BASE_URL || 'http://localhost:3000/api'
+    //   const request = axios.create({ baseURL })
+    //   const { data: resData } = await request.get('/videos')
+    //   return resData.data.map((el) => { return `/watch/${el.id}` })
+    // }
+  },
   /*
   ** Build configuration
   ** See https://nuxtjs.org/api/configuration-build/

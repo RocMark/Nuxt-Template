@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/sitemap": "^2.4.0",
     "nuxt": "^2.13.0",
     "nuxt-start": "^2.14.0",
     "uuid": "^8.2.0"
