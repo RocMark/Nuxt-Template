@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  layout: 'example',
   props: {
     propName: {
       type: String,

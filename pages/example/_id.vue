@@ -7,6 +7,7 @@
 
 <script>
 export default {
+  layout: 'example',
   data () {
     return {
       testStr: 'testStr',
