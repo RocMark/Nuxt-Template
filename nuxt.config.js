@@ -99,7 +99,14 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extractCSS: false, // 是否打包成 css 檔，而非寫在 html 上
+    // 將超過 1KB 的圖檔，轉換成用 base64 編碼
+    loaders: {
+      imgUrl: { limit: 1 * 1000 } // 1000 = 1KB
+    },
+    // 用於覆蓋 webpack 設定檔
     extend (config, ctx) {
+      // console.log(config) // 會將內容印在終端機
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({

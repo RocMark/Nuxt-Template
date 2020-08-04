@@ -13,6 +13,10 @@
     "test": "jest",
     "init": "npm i && cp .env.example .env"
   },
+  "browserslist": [
+    "last 4 version",
+    "not dead"
+  ],
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/sitemap": "^2.4.0",
