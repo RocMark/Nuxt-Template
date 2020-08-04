@@ -29,6 +29,8 @@ npm run generate
 - [x] Router Example
 - [x] Page Group BluePrint
 - [x] nuxt-start ( For Deploy )
+- [x] Google Font ( Noto Sans TC )
+- [x] normalize.css
 
 
 ## TodoList
