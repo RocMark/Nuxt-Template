@@ -66,7 +66,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/google-analytics'
   ],
   /*
   ** Nuxt.js modules
@@ -76,6 +77,10 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/sitemap' // 必須放在最下面
   ],
+  /* GA */
+  googleAnalytics: {
+    id: 'UA-UA-174600613-1'
+  },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
