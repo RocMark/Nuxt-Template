@@ -13,6 +13,7 @@ export default {
   data () {
     return {
       routeList: [
+        { id: uuidv4(), to: '/', name: 'Root' },
         { id: uuidv4(), to: '/example', name: 'Example' },
         { id: uuidv4(), to: '/example/2', name: 'ExampleID-2' },
         { id: uuidv4(), to: '/example/2/edit', name: 'ExampleID-2-Edit' },

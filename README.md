@@ -27,10 +27,17 @@ npm run generate
 - [x] Global SCSS Variable
 - [x] ESLint
 - [x] Router Example
-- [x] Page Group BluePrint
 - [x] nuxt-start ( For Deploy )
 - [x] Google Font ( Noto Sans TC )
 - [x] normalize.css
+- [x] Google Analytics
+
+## BluePrint
+- [x] Component
+- [x] Layout
+- [x] PageGroup    ( Nested Routes )
+- [x] Plugin-VueJS ( For VueJS plugin Ex: vuejs-date-pickeer) 
+- [x] Plugin-JS    ( For JS plugin Ex: gsap) 
 
 
 ## TodoList
