@@ -53,6 +53,7 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    // { src: '~/plugins/datepicker.js', mode: 'client' }
   ],
   /*
   ** Auto import components
