@@ -79,7 +79,7 @@ export default {
   ],
   /* GA */
   googleAnalytics: {
-    id: 'UA-UA-174600613-1'
+    id: 'UA-174600613-1'
   },
   /*
   ** Axios module configuration
