@@ -54,6 +54,8 @@ export default {
   */
   plugins: [
     // { src: '~/plugins/datepicker.js', mode: 'client' }
+    { src: '~/plugins/bootstrap.js', mode: 'client' },
+    { src: '~/plugins/jquery.js', mode: 'client' }
   ],
   /*
   ** Auto import components

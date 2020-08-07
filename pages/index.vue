@@ -5,6 +5,7 @@
       RootPage {{ testStr }}
     </h1>
     <Example />
+    <Bs4Modal />
     <!-- <img src="../assets/img/demo.svg" alt="demo"> -->
   </div>
 </template>
