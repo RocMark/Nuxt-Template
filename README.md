@@ -31,6 +31,7 @@ npm run generate
 - [x] Google Font ( Noto Sans TC )
 - [x] normalize.css
 - [x] Google Analytics
+- [x] Boostrap | jquery | popper.js ( on boostrap branch )
 
 ## BluePrint
 - [x] Component
