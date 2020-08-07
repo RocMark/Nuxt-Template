@@ -1,1 +1,36 @@
+// 1200, 992, 768, 576 ( BS4 breakpoint )
+$media-xl: 1200px;
+$media-l: 992px;
+$media-m: 768px;
+$media-sm: 576px;
+$media-xs: 0px;
 
+@mixin media-xl() {
+  @media all and (min-width: $media-xl) {
+    @content;
+  }
+}
+
+@mixin media-l() {
+  @media all and (min-width: $media-l) and (max-width: $media-xl) {
+    @content;
+  }
+}
+
+@mixin media-m() {
+  @media all and (min-width: $media-m) and (max-width: $media-l) {
+    @content;
+  }
+}
+
+@mixin media-sm() {
+  @media all and (min-width: $media-sm) and (max-width: $media-m) {
+    @content;
+  }
+}
+
+@mixin media-xs() {
+  @media all and (min-width: $media-xs) and (max-width: $media-sm) {
+    @content;
+  }
+}
