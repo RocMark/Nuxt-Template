@@ -15,6 +15,9 @@
 @import './normalize';
 @import './reset';
 
+/* Vendor 用來放置第三方資源 */
+@import './vendors/_bootstrap.scss';
+
 /* Test */
 @import './test';
 
