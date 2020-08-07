@@ -55,6 +55,11 @@ export default {
   plugins: [
     // { src: '~/plugins/datepicker.js', mode: 'client' }
   ],
+  styleResources: {
+    scss: [
+      './assets/scss/main.scss'
+    ]
+  },
   /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
