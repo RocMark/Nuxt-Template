@@ -169,6 +169,13 @@ export default {
       }
     }
   },
+  /*
+  ** Use Nuxt to Build Express Server
+  ** See https://nuxtjs.org/api/configuration-servermiddleware/
+  */
+  serverMiddleware: [
+    { path: '/api', handler: '~/server/api.js' } // API BaseURL http://localhost:3001/api/
+  ],
   server: {
     port: 3001
   }

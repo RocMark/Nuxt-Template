@@ -32,6 +32,7 @@ npm run generate
 - [x] normalize.css
 - [x] Google Analytics
 - [x] Boostrap | jquery | popper.js ( on boostrap branch )
+- [x] Simple Express Server
 
 ## BluePrint
 - [x] Component

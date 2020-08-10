@@ -7,7 +7,7 @@ const EXAMPLE_STR = 'EXAMPLE_STR'
 
 // 必須對應 store.js 中的 module 名稱
 const moduleName = 'exampleModule'
-const API_BASE_URL = process.env.VUE_APP_API_BASE_URL
+const API_BASE_URL = process.env.VUE_APP_API_BASE_URL || ''
 
 const request = axios.create({
   // baseURL: `${API_BASE_URL}`,
