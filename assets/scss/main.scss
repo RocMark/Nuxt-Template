@@ -7,6 +7,9 @@
 @import './functions';
 @import './mixin';
 
+/* Nuxt Default SCSS */
+@import './_nuxt.scss';
+
 /* Animation */
 @import './animation';
 @import './transition';
@@ -20,6 +23,7 @@
 
 /* Custom */
 @import './_base';
+
 
 
 
