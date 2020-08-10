@@ -5,8 +5,12 @@
 </template>
 
 <script>
+import { sleep } from '../../assets/js/test'
 export default {
-  layout: 'example'
+  layout: 'example',
+  async asyncData () {
+    await sleep(1000)
+  }
 }
 </script>
 

@@ -61,6 +61,33 @@ export default {
     ]
   },
   /*
+  ** Loading
+  ** See https://zh.nuxtjs.org/api/configuration-loading/
+  */
+  // loading: false,
+  loading: {
+    color: '#40659b',
+    failedColor: 'red',
+    height: '2px',
+    throttle: 200, // 防止閃爍
+    duration: 3000, // default: 5000
+    continuous: false, // 加載時間超過 duration 保持動畫進度條
+    css: true // 設為 false 刪除默認進度條樣式，需自行添加樣式
+  },
+  /*
+  ** Transition
+  ** See https://nuxtjs.org/api/configuration-transition/
+  */
+  pageTransition: {
+    name: 'page', // 對應 CSS .page-enter-active
+    mode: 'out-in'
+    // beforeEnter (el) { } // 建議使用 router-guard.js
+  },
+  layoutTransition: {
+    name: 'layout', // 對應 CSS .layout-enter-active
+    mode: 'out-in'
+  },
+  /*
   ** Auto import components
   ** See https://nuxtjs.org/api/configuration-components
   */
