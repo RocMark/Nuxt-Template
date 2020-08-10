@@ -5,7 +5,7 @@
 </template>
 
 <script>
-export default {
+  layout: 'default',
   props: {
     test: {
       type: String,
