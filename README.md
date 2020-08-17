@@ -24,6 +24,7 @@ npm run generate
 ```
 
 ## ⚙️ Functions
+- [x] Global Environment Variables
 - [x] Global SCSS Variable
 - [x] ESLint
 - [x] Router Example
@@ -33,6 +34,8 @@ npm run generate
 - [x] Google Analytics
 - [x] Boostrap | jquery | popper.js ( on boostrap branch )
 - [x] Simple Express Server
+- [x] Axios Plugin ( with axios instance & interceptor )
+- [x] Vuex ( mapState, mapMutations, mapActions )
 
 ## BluePrint
 - [x] Component
@@ -40,7 +43,6 @@ npm run generate
 - [x] PageGroup    ( Nested Routes )
 - [x] Plugin-VueJS ( For VueJS plugin Ex: vuejs-date-pickeer) 
 - [x] Plugin-JS    ( For JS plugin Ex: gsap) 
-
 
 ## TodoList
 - [ ] 處理 exampleModule 引入 interceptor 問題

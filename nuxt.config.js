@@ -61,6 +61,7 @@ export default {
   */
   plugins: [
     // { src: '~/plugins/datepicker.js', mode: 'client' }
+    '~/plugins/axios'
   ],
   styleResources: {
     scss: [
@@ -125,7 +126,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    baseURL: process.env.VUE_APP_API_BASE_URL || ''
+    // 不使用，統一在 axios plugin 裡面設定
   },
   /*
   ** sitemap module configuration
