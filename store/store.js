@@ -1,11 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import exampleModule from './modules/example/exampleModule'
+import exampleModule from '@/store/modules/example/exampleModule'
 
 Vue.use(Vuex)
 
-const state = () => ({})
+const state = () => { return {} }
 
 const store = new Vuex.Store({
   modules: {
@@ -13,6 +13,7 @@ const store = new Vuex.Store({
   },
   // 全域使用的才寫這裡
   state,
+  getters: {},
   actions: {},
   mutations: {},
   strict: process.env.NODE_ENV !== 'production'

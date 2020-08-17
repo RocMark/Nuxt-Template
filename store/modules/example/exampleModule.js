@@ -23,10 +23,19 @@ const state = () => {
   }
 }
 
+// Getters
+const getters = () => {
+  return {
+    todoLength: (state) => {
+      return state.todoList.length
+    }
+  }
+}
+
 // 同步事件 => 將資料寫入 Vuex
 const mutations = {
-  [EXAMPLE_STR] (context, data) {
-    this.state[moduleName].todoList = data
+  [EXAMPLE_STR] (state, data) {
+    state[moduleName].todoList = data
   }
 }
 
@@ -48,6 +57,7 @@ export default {
   namespaced: true,
   strict: process.env.NODE_ENV !== 'production',
   state,
+  getters,
   mutations,
   actions
 }
