@@ -2,6 +2,13 @@ import axios from 'axios'
 
 export default {
   /*
+  ** Nuxt Environment Variable
+  ** See https://nuxtjs.org/api/configuration-env/
+  */
+  env: {
+    // 不使用，請參考 .env.example
+  },
+  /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
   */
