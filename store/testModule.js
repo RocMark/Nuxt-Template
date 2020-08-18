@@ -3,6 +3,7 @@ const EXAMPLE_STR = 'EXAMPLE_STR'
 // 初始化 State 值 (必須為 function)
 export const state = () => {
   return {
+    str: 'TestStr789789789',
     todoList: []
   }
 }
@@ -10,9 +11,11 @@ export const state = () => {
 // Getters
 export const getters = () => {
   return {
-    todoLength: (state) => {
-      // console.log('\x1B[36m%s\x1B[0m', '=test=======', state)
-      return state.todoList.length || 0
+    testStr: (state) => {
+      return `This is ${state.str}`
+    },
+    todoListLength: (state) => {
+      return state.todoList.length
     }
   }
 }
@@ -28,7 +31,7 @@ export const mutations = {
 export const actions = {
   getTodoList (context, payload) {
     const reqData = { ...payload }
-    const url = '/users'
+    const url = '/todos'
     this.$testRequest.get(url, { params: reqData })
       .then((res) => {
         const resData = res.data
