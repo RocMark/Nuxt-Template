@@ -4,10 +4,9 @@ export default {
   /*
   ** Nuxt Environment Variable
   ** See https://nuxtjs.org/api/configuration-env/
+  ** 不建議使用，使用分開的 .env 為佳
   */
-  env: {
-    // 不使用，請參考 .env.example
-  },
+  // env: {},
   /*
   ** Nuxt rendering mode
   ** See https://nuxtjs.org/api/configuration-mode
@@ -107,7 +106,12 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     '@nuxtjs/style-resources',
-    '@nuxtjs/google-analytics'
+    '@nuxtjs/google-analytics',
+    ['@nuxtjs/dotenv'], // 只加這個會只有 .env 可用
+
+    // 如果有多種環境 Ex: .env.sit | .env.prod 就需要額外加上此行
+    // process.env.NODE_ENV 由 npm script 下指令時設定
+    ['@nuxtjs/dotenv', { filename: '.env.' + process.env.NODE_ENV }]
   ],
   /*
   ** Nuxt.js modules

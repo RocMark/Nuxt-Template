@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "cross-env NODE_ENV=dev nuxt",
+    "build_DEV": "cross-env NODE_ENV=dev nuxt build",
+    "prod": "cross-env NODE_ENV=prod nuxt",
+    "build_PROD": "cross-env NODE_ENV=prod nuxt build",
     "export": "nuxt export",
     "serve": "nuxt serve",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .eslintignore",
@@ -19,7 +20,9 @@
   ],
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/sitemap": "^2.4.0",
+    "cross-env": "^7.0.2",
     "express": "^4.17.1",
     "nuxt": "^2.13.0",
     "nuxt-start": "^2.14.0",
