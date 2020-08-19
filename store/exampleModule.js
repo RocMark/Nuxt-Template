@@ -1,9 +1,11 @@
 const EXAMPLE_STR = 'EXAMPLE_STR'
+const MOCK_EXAMPLE = 'MOCK_EXAMPLE'
 
 // 初始化 State 值 (必須為 function)
 export const state = () => {
   return {
-    todoList: []
+    todoList: [],
+    mockData: {}
   }
 }
 
@@ -21,6 +23,9 @@ export const getters = () => {
 export const mutations = {
   [EXAMPLE_STR] (state, data) {
     state.todoList = data
+  },
+  [MOCK_EXAMPLE] (state, data) {
+    state.mockData = data
   }
 }
 
@@ -33,6 +38,15 @@ export const actions = {
       .then((res) => {
         const resData = res.data
         context.commit(EXAMPLE_STR, resData)
+      })
+  },
+  mockCORS (context, payload) {
+    const reqData = { ...payload }
+    const url = '/test'
+    this.$mockRequest.get(url, { params: reqData })
+      .then((res) => {
+        const resData = res.data
+        context.commit(MOCK_EXAMPLE, resData)
       })
   }
 }

@@ -29,6 +29,14 @@ export default function ({ $axios, redirect }, inject) {
   })
   createInterceptor({ request: testRequest, requestName: 'testRequest' })
   inject('testRequest', testRequest)
+
+  //* ShowCase CORS
+  const mockRequest = $axios.create({
+    baseURL: 'http://localhost:3015/api',
+    headers: { }
+  })
+  createInterceptor({ request: mockRequest, requestName: 'mockRequest' })
+  inject('mockRequest', mockRequest)
 }
 
 const createInterceptor = ({ request, requestName = '' }) => {
