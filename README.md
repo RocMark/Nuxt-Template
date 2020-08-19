@@ -44,6 +44,11 @@ npm run generate
 - [x] Plugin-VueJS ( For VueJS plugin Ex: vuejs-date-pickeer) 
 - [x] Plugin-JS    ( For JS plugin Ex: gsap) 
 
+## Mock Server
+- [x] Basic Route
+- [x] CORS Setup
+- [x] dayjs
+
 ## TodoList
 - [ ] 處理 exampleModule 引入 interceptor 問題
 - [ ] 整理一下 meta tag => 寫在 index.js (想辦法讓每頁都套用)

@@ -91,3 +91,4 @@ sw.*
 
 # custom
 /stash
+/mock/.env
