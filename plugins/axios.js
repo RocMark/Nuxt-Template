@@ -18,7 +18,6 @@ export default function ({ $axios, redirect }, inject) {
     baseURL: process.env.NUXT_ENV_BASE_API_URL || '',
     headers: { }
   })
-
   // ? Link Interceptor to Axios Instance
   createInterceptor({ request, requestName: 'requestName' })
   inject('request', request)
@@ -63,7 +62,7 @@ const reqSuccessFunc = async (config) => {
   config.headers = {
     ...await headerWithToken({ configHeader: config.headers })
   }
-  console.log('\x1B[36m%s\x1B[0m', '=test====reqSuccessFunc==Header=', config.headers)
+  // console.log('\x1B[36m%s\x1B[0m', '=test====reqSuccessFunc==Header=', config.headers)
   return config
 }
 
@@ -92,19 +91,19 @@ const fetchNewTokens = () => {
 
 // ! 可在此做統一的 API 錯誤處理
 const resFailFunc = (error) => {
-  console.log('\x1B[36m%s\x1B[0m', '=test====resFailFunc===')
+  // console.log('\x1B[36m%s\x1B[0m', '=test====resFailFunc===')
   return Promise.reject(error)
 }
 
 //* ******************************************************************************** * */
 // 下列兩個較少使用
 const reqFailFunc = (error) => {
-  console.log('\x1B[36m%s\x1B[0m', '=test====reqFailFunc===')
+  // console.log('\x1B[36m%s\x1B[0m', '=test====reqFailFunc===')
   return Promise.reject(error)
 }
 
 const resSuccessFunc = (response) => {
-  console.log('\x1B[36m%s\x1B[0m', '=test====resSuccessFunc===')
+  // console.log('\x1B[36m%s\x1B[0m', '=test====resSuccessFunc===')
   return response
 }
 

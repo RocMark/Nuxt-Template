@@ -3,9 +3,8 @@ const app = express()
 
 // 使用 ~/api/test 進入此路由
 app.get('/test', (req, res) => {
-  res.json({
-    title: 'Mock!'
-  })
+  res.status(200)
+  res.json({ title: 'Mock!' })
 })
 
 app.post('/test', (req, res) => {

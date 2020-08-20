@@ -4,8 +4,8 @@
     <h1>
       RootPage {{ testStr }}
     </h1>
-    <!-- <Example /> -->
-    <MockExample />
+    <Example />
+    <!-- <MockExample /> -->
     <!-- <img src="../assets/img/demo.svg" alt="demo"> -->
   </div>
 </template>
