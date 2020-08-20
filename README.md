@@ -24,18 +24,20 @@ npm run generate
 ```
 
 ## ⚙️ Functions
+- [x] Vuex ( mapState, mapGetters, mapMutations, mapActions )
+- [x] Router Example
+- [x] Axios Plugin ( with axios instance & interceptor )
+- [x] Google Analytics
+- [x] Google Font ( Noto Sans TC )
+- [x] normalize.css
+- [x] Boostrap | jquery | popper.js ( on boostrap branch )
+- [x] Simple Express Server
+
+## Environments
 - [x] Global Environment Variables
 - [x] Global SCSS Variable
 - [x] ESLint
-- [x] Router Example
 - [x] nuxt-start ( For Deploy )
-- [x] Google Font ( Noto Sans TC )
-- [x] normalize.css
-- [x] Google Analytics
-- [x] Boostrap | jquery | popper.js ( on boostrap branch )
-- [x] Simple Express Server
-- [x] Axios Plugin ( with axios instance & interceptor )
-- [x] Vuex ( mapState, mapGetters, mapMutations, mapActions )
 
 ## BluePrint
 - [x] Component
