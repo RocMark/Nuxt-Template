@@ -35,7 +35,7 @@ npm run generate
 - [x] Boostrap | jquery | popper.js ( on boostrap branch )
 - [x] Simple Express Server
 - [x] Axios Plugin ( with axios instance & interceptor )
-- [x] Vuex ( mapState, mapMutations, mapActions )
+- [x] Vuex ( mapState, mapGetters, mapMutations, mapActions )
 
 ## BluePrint
 - [x] Component

@@ -10,12 +10,9 @@ export const state = () => {
 }
 
 // Getters
-export const getters = () => {
-  return {
-    todoLength: (state) => {
-      // console.log('\x1B[36m%s\x1B[0m', '=test=======', state)
-      return state.todoList.length || 0
-    }
+export const getters = {
+  todoListLength: (state) => {
+    return state.todoList.length || 0
   }
 }
 

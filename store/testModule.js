@@ -8,18 +8,6 @@ export const state = () => {
   }
 }
 
-// Getters
-export const getters = () => {
-  return {
-    testStr: (state) => {
-      return `This is ${state.str}`
-    },
-    todoListLength: (state) => {
-      return state.todoList.length
-    }
-  }
-}
-
 // 同步事件 => 將資料寫入 Vuex
 export const mutations = {
   [EXAMPLE_STR] (state, data) {
