@@ -45,6 +45,7 @@ npm run generate
 - [x] PageGroup    ( Nested Routes )
 - [x] Plugin-VueJS ( For VueJS plugin Ex: vuejs-date-pickeer) 
 - [x] Plugin-JS    ( For JS plugin Ex: gsap) 
+- [x] Vuex Store & Vuex Snippets
 
 ## Mock Server
 - [x] Basic Route
