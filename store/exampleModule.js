@@ -37,13 +37,21 @@ export const actions = {
         context.commit(EXAMPLE_STR, resData)
       })
   },
+  testFetch (context, payload) {
+    console.log('\x1B[36m%s\x1B[0m', '=test====testFetch===', payload)
+  },
   mockCORS (context, payload) {
     const reqData = { ...payload }
     const url = '/test'
     this.$mockRequest.get(url, { params: reqData })
       .then((res) => {
         const resData = res.data
+        console.log('\x1B[36m%s\x1B[0m', '=test===mockCORS==Success==', resData)
         context.commit(MOCK_EXAMPLE, resData)
+      })
+      .catch((error) => {
+        console.log('\x1B[36m%s\x1B[0m', '=test===mockCORS==Fail==')
+        console.error(error)
       })
   }
 }

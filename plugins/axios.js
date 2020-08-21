@@ -34,7 +34,7 @@ export default function ({ $axios, redirect }, inject) {
     baseURL: 'http://localhost:3015/api',
     headers: { }
   })
-  createInterceptor({ request: mockRequest, requestName: 'mockRequest' })
+  // createInterceptor({ request: mockRequest, requestName: 'mockRequest' })
   inject('mockRequest', mockRequest)
 }
 
