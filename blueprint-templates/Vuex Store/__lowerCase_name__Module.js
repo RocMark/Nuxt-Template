@@ -8,6 +8,9 @@ export const state = () => {
 
 // Getters
 export const getters = {
+  someLength: (state) => {
+    return 0
+  }
 }
 
 // 同步事件 => 將資料寫入 Vuex
