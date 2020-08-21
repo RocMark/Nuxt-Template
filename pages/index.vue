@@ -1,17 +1,14 @@
 <template>
   <div class="container">
     <Logo />
-    <h1>
-      RootPage {{ testStr }}
-    </h1>
-    <Example />
+    <h1>RootPage</h1>
     <!-- <MockExample /> -->
     <!-- <img src="../assets/img/demo.svg" alt="demo"> -->
   </div>
 </template>
 
 <script>
-import { test } from '../assets/js/format'
+import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 export default {
   computed: {
