@@ -41,12 +41,10 @@ export const actions = {
     console.log('\x1B[36m%s\x1B[0m', '=test====testFetch===', payload)
   },
   mockCORS (context, payload) {
-    const reqData = { ...payload }
-    const url = '/test'
-    this.$mockRequest.get(url, { params: reqData })
+    this.$axios.get('https://jsonplaceholder.typicode.com/users')
       .then((res) => {
         const resData = res.data
-        console.log('\x1B[36m%s\x1B[0m', '=test===mockCORS==Success==', resData)
+        console.log('\x1B[36m%s\x1B[0m', '=test===mockCORS==Success==', resData.length)
         context.commit(MOCK_EXAMPLE, resData)
       })
       .catch((error) => {
