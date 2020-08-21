@@ -1,5 +1,12 @@
 # Nuxt Template
 
+## Branch
+- master ( main branch )
+- deployed ( deployed branch )
+- bootstrap ( nuxt bootstrap4 setup )
+- env ( mock server env test )
+- fetchLogIssue ( fetch Log Issue )
+
 ## 💿 Install 
 ```bash
 # install
@@ -8,7 +15,6 @@ npm i
 # install & generate .env file (will overwrite)
 npm run init
 ```
-
 
 ## 🚀 Usage
 ```bash
@@ -21,6 +27,10 @@ npm run start
 
 # generate static project ( Use on GithubPage )
 npm run generate
+
+# run mock server
+cd mock/
+npm run server
 ```
 
 ## ⚙️ Functions
@@ -53,5 +63,4 @@ npm run generate
 - [x] dayjs
 
 ## TodoList
-- [ ] 處理 exampleModule 引入 interceptor 問題
 - [ ] 整理一下 meta tag => 寫在 index.js (想辦法讓每頁都套用)
