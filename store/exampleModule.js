@@ -5,7 +5,7 @@ const MOCK_EXAMPLE = 'MOCK_EXAMPLE'
 export const state = () => {
   return {
     todoList: [],
-    mockData: {}
+    mockData: []
   }
 }
 

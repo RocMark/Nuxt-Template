@@ -3,8 +3,7 @@
     <Logo />
     <h1>RootPage</h1>
     <p>test: {{ test }}</p>
-    <p>mockData: {{ JSON.stringify(mockData) }}</p>
-    <!-- <Example /> -->
+    <Example :data="mockData" />
     <!-- <MockExample /> -->
     <!-- <img src="../assets/img/demo.svg" alt="demo"> -->
   </div>
@@ -29,8 +28,8 @@ export default {
     }
   },
   computed: {
-    // ...mapState('exampleModule', { mockData: 'mockData' })
-    ...mapState('exampleModule', ['mockData'])
+    ...mapState('exampleModule', { mockData: 'mockData' })
+    // ...mapState('exampleModule', ['mockData'])
   },
   methods: {
     ...mapActions('exampleModule', ['mockCORS'])
